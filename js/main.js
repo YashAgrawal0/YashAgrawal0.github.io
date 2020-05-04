@@ -21,12 +21,14 @@
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
+      $('#back2top').fadeIn('slow');
+      $('#scrollDown').fadeOut('slow');
     } else {
-      $('.back-to-top').fadeOut('slow');
+      $('#back2top').fadeOut('slow');
+      $('#scrollDown').fadeIn('slow');
     }
   });
-  $('.back-to-top').click(function(){
+  $('#back2top').click(function(){
     $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
     return false;
   });
@@ -51,7 +53,7 @@
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
 				$('html, body').animate({
-					scrollTop: (target.offset().top - navHeight + 5)
+					scrollTop: (target.offset().top - navHeight + 20)
 				}, 1000, "easeInOutExpo");
 				return false;
 			}
