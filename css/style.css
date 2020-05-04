@@ -86,7 +86,7 @@ a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /*background-position: center center;*/
+  background-position: center center;
 }
 
 .overlay-mf {
@@ -604,6 +604,7 @@ a:hover {
   height: 100vh;
   position: relative;
   color: #fff;
+  background-image: url(../img/intro-bg.jpg);
 }
 
 .intro .intro-content {
@@ -1268,6 +1269,12 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
+
+  #home {
+    background-image: url(../img/intro-bg2.jpg);
+  }
+
+}
 
 @media (max-width: 577px) {
   #testimonialCard {
