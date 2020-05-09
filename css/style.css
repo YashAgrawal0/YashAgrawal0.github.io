@@ -1283,13 +1283,13 @@ footer .credits a {
     padding: 0 13rem;
   }
 }
-
+/*
 @media (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
   }
 }
-
+*/
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
@@ -1313,6 +1313,13 @@ footer .credits a {
 
 #aboutCard {
   background-color: #efffdd;
+  border-radius: 50px;
+}
+
+#timelineCard {
+  background-color: #7d9bad;  /*#474e5d;*/
+  border-radius: 50px;
+  border: 2px solid black;
 }
 
 .myInfo {
