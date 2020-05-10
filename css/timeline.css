@@ -128,4 +128,8 @@
   left: 0%;
   }
 }
-</style>
+
+.timeline_container_title {
+  margin-bottom: -5%;
+  margin-top: -4%;  
+}

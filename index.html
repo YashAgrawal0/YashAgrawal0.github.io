@@ -19,14 +19,16 @@
   
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="timeline.css">
+  <link rel="stylesheet" href="css/timeline.css">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href='css/magnific-popup.css'>
 </head>
 
 <body id="page-top">
@@ -141,26 +143,28 @@
 
 
 <!-- Timeline  -->
-  <section id="timeline" class="about-mf sect-pt4 route bg-image" style="background-image: url(img/download.jpg)">
+  <section id="timeline" class="about-mf sect-pt4 route bg-image" style="background-image: url(img/timeline-bg.jpg)">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="box-shadow-full" id="timelineCard">
             <div class="row">
             	<div class="col-12 text-center" data-aos="fade">
-            		<div class="title-box-2">
-                    	<h5 class="title-left" style="font-size: 50px; color: black;">
-                      		TIMELINE
+            		<div id="title_box">
+                    	<h5 style="font-size: 50px; color: black;">
+                    		<b>
+                      			TIMELINE
+                      		</b>
                     	</h5>
                   	</div>
           		</div>
             	<div class="timeline">
 				  <div class="timeline_container left">
 				    <div class="content">
-				      <div id="title_2019">
-				        <h1 style="text-align: center;">2019</h1>
+				      <div id="title_2019" class="timeline_container_title">
+				        <h3 style="text-align: center;">2019</h3>
 				      </div>
-				      <div style="display: none;" id="img_2019">
+				      <div style="display: none; margin-top: 7%;" id="img_2019">
 				        <img src="img/MS.jpg" width="100%">
 					    <div style="padding-top: 3%;">
 					        <p style="font-weight: bold; text-align: center; margin-bottom: 0;">Intern @ Microsoft IDC Bangalore</p>
@@ -172,10 +176,10 @@
 				  </div>
 				  <div class="timeline_container right">
 				    <div class="content">
-				      <div id="title_2018">
-				        <h1 style="text-align: center;">2018 - 2019</h1>
+				      <div id="title_2018" class="timeline_container_title">
+				        <h3 style="text-align: center;">2018 - 2019</h3>
 				      </div>
-				      <div style="display: none;" id="img_2018">
+				      <div style="display: none; margin-top: 7%;" id="img_2018">
 				        <img src="img/pc.png" width="100%">
 					    <div style="padding-top: 3%;">
 					        <p style="font-weight: bold; text-align: center; margin-bottom: 0;">Programming Club Coordinator @ IIT Mandi</p>
@@ -187,10 +191,10 @@
 				  </div>
 				  <div class="timeline_container left">
 				    <div class="content">
-				      <div id="title_2016">
-				        <h1 style="text-align: center;">2016</h1>
+				      <div id="title_2016" class="timeline_container_title">
+				        <h3 style="text-align: center;">2016</h3>
 				      </div>
-				      <div style="display: none;" id="img_2016">
+				      <div style="display: none; margin-top: 7%;" id="img_2016">
 				        <img src="img/iitmandi.jpg" width="100%">
 					    <div style="padding-top: 3%;">
 					        <p style="font-weight: bold; text-align: center; margin-bottom: 0;">Indian Institute Of Technology, Mandi</p>
@@ -202,10 +206,10 @@
 				  </div>
 				  <div class="timeline_container right">
 				    <div class="content">
-				      <div id="title_2015">
-				        <h1 style="text-align: center;">2015 - 2016</h1>
+				      <div id="title_2015" class="timeline_container_title">
+				        <h3 style="text-align: center;">2015 - 2016</h3>
 				      </div>
-				      <div style="display: none;" id="img_2015">
+				      <div style="display: none; margin-top: 7%;" id="img_2015">
 				        <img src="img/allen.jpg" width="100%">
 					    <div style="padding-top: 3%;">
 					        <p style="font-weight: bold; text-align: center; margin-bottom: 0;">Allen Career Institute @ Kota</p>
@@ -217,10 +221,10 @@
 				  </div>
 				  <div class="timeline_container left">
 				    <div class="content">
-				      <div id="title_2008">
-				        <h1 style="text-align: center;">2008 - 2015</h1>
+				      <div id="title_2008" class="timeline_container_title">
+				        <h3 style="text-align: center;">2008 - 2015</h3>
 				      </div>
-				      <div style="display: none;" id="img_2008">
+				      <div style="display: none; margin-top: 7%;" id="img_2008">
 				        <img src="img/emmanuel.jpg" width="100%">
 					    <div style="padding-top: 3%;">
 					        <p style="font-weight: bold; text-align: center; margin-bottom: 0;">Emmanuel Sr. Sec. School, Bundi, Rajasthan</p>
@@ -234,7 +238,7 @@
 				    <div class="content">
 				      <h2></h2>
 				      <p style="font-size: 20px;">
-				      	Born in BUNDI (a prominent town in the Hadoti region of Rajasthan state in northwest India, also known as <i>"CHHOTI KASHI"</i> ).</p>
+				      	Born in BUNDI <i>(a prominent town in the Hadoti region of Rajasthan state in northwest India, also known as "CHHOTI KASHI"</i> ).</p>
 				    </div>
 				  </div>
 				</div>
@@ -246,16 +250,171 @@
   </section>
 <!-- Timeline end -->
 
+  <!--/ Section Projects Star /-->
+  <section id="projects" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center" style="padding-top: 5%;">
+            <h3 class="title-a">
+              Projects
+            </h3>
+            <p class="subtitle-a">
+				A handful of projects owing to my interest.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-settings"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Synthetic Data Generation Tool</h2>
+              <p class="s-description text-center">
+              	The goal of the project is to build an internal tool through which synthetic data can be generated for any number of test tenants, triggering the application in different scenarios 
+              	<a class="img-box lightbox thumbnail" href="#project1" data-lightbox-anima="show-scale" style="color: blue;">
+                        more ...
+                </a>
+                <div id="project1" class="box-lightbox">
+                    <div class="subtitle g">
+                        <h4>Synthetic Data Generation Tool for MS teams</h4>
+                        <hr>
+                    </div>
+                    Major Goal of Analytics and reporting services in "Microsoft Teams" is to measure the growth and engagement of owners and members to understand how teams is being used. Several metrics can be tracked in MS teams like : Active users, volume of messages, number of file uploads, top channels, top contributors etc.
+                    To be able to build these data driven features inside MS teams the primary requirement is to check these features using synthetic data and these can be rolled out in production. Real customer data can not be used due to privacy concerns, data protection and security reasons.
+                    <br>
+                    <br>
+                    The goal of the project is to build an internal tool through which data can be generated for any number of test tenants. During the intenship at Micorosoft I Created the synthetic data generation tool which triggers the application (MS teams) in different scenarios. The tool was built on following technologies : Python, Javascript, Selenium, Chrome Extension, Postman, Azure Server, REST API, SMTP server, Database Server, Object oriented programming.Javascript used to convert the data from extension into json format and make a POST request to the flask server deployed on azure. In the background Daemon scripts are running in distributed systems and constantly checking for new jobs from the database.
+                    <br>
+                    <br>
+                    After the completion of the project Microsoft developers were able to use the chrome extension to submit a job which will generate the data. Database is used to make the data persistent and multiple jobs can run at the same time. In the production version whenever a job gets completed a notification was sent to the cocerned person using an SMTP server. 
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-android-volume-up"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Automatic Commentary Generation using DL</h2>
+              <p class="s-description text-center">
+              	Generated commentary of the given cricket video using different networks : scene segmentation, Single Shot multibox Detector, classifiers for annotating batsman and bowler name 
+              	<a class="img-box lightbox thumbnail" href="#project2" data-lightbox-anima="show-scale" style="color: blue;">
+                        more ...
+                </a>
+                <div id="project2" class="box-lightbox">
+                    <div class="subtitle g">
+                        <h4>Automatic Commentary Generation Using Deep Learning</h4>
+                        <hr>
+                    </div>
 
+                    Created a deep learning application to automatically generates commentary of a cricket video provided. Networks used in the project were : scene segmentation, SSD (Single Shot multibox Detector), classifiers for annotating batsman and bowler name and shot played by the batsman using conv LSTM.
+                    <br>
+                    <br>
+                    Following technologies were used to build the project : Python (Used to import all the libraries related to deep learning like tensorflow, imageai, object detection etc.), Keras (an open source neural network library capable of running on top of tensorflow), cv2 (Python library used to load and read the image file provided).
+                    <br>
+                    <br>
+                    Initially the full length cricket video was cut into videos of each ball. Now the video of each ball was converted into frames and saves into the corresponding ball number folder. Given a ball video length folder, separated the starting scene frames from other scenes using scene segmentation. A pre-trainded SSD was used to generate the bouding boxes for batsman and bowler. The frames were cropped with the bounding boxes and saves into the corresponding folders as batsman/player_id and the bowler/player_id. These cropped images were then used to train a siamese network for naming batsman and the bowler. Now the commentary is generated using NLP (Natural Language Processing).
+                    <br>
+                    <br>
+                    If required, full explaination can be found in the link given below.
+                    <hr>
+                    <a href="https://www.youtube.com/watch?v=DZOQS_a0dEo" style="text-align: center;"><h5 style="color: blue;">Click to know more</h5></a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-monitor"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Hosting Students Projects</h2>
+              <p class="s-description text-center">
+              	Bash script created through which students of IIT Mandi can host new projects in docker containers. Docker swarm used for dynamic scaling of docker containers. Load tested using 
+              	<a class="img-box lightbox thumbnail" href="#project3" data-lightbox-anima="show-scale" style="color: blue;">
+                        more ...
+                </a>
+                <div id="project3" class="box-lightbox">
+                    <div class="subtitle g">
+                        <h4>Hosting Students Projects</h4>
+                        <hr>
+                    </div>
+                    The project was intended for all the students, faculties, and clubs in IIT Mandi who want to host their projects. This may also be useful for other students who want to work on similar project for their organization or for some other purpose. Projects made by students from different fields need to be hosted at a place providing efficient consumption of host resources. These student projects are heterogeneous in terms of the software components required. However, there may be certain software components that are common to a group of projects. Rather than creating a docker container for each project, we can have shared containers for shared components across projects. Sharing containers is not always a good idea. If one of the projects that shares a container has a heavy load, it will affect others as well. 
+                    <br>
+                    <br>
+                    In terms of design aspets, There’s a single VM (Virtual Machine) on which several docker containers are running in parallel. There’s a container for hosting Apache websites e.g, Programming Club website, SNTC website, STAC website, etc which are static websites. Another container will host NodeJS app. One container for MongoDB and another for MySQL. These all are setup using Docker swarm to enable dynamic replication of the containers for load balancing. The actual files and folders containing the actual websites and database are stored in the VM itself and mapped from the container. So that the deletion and creation of new containers would not take much time as all the data is stored in the VM itself.
+                    <br>
+                    <br>
+                     If you are interested in the project, find the full report of the project in the link given below.
+                    <hr>
+                    <a href="https://docs.google.com/document/d/1qm4tWLVas_4x8wsvNPSPnLcVx51gVV-0XlmerxUGRtY/edit?usp=sharing" style="text-align: center;"><h5 style="color: blue;">Click to know more</h5></a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-search"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Search Guru</h2>
+              <p class="s-description text-center">
+                Developed a webapp which scraps data dynamically from the websites of different institutes (IITs). The data extracted from the websites is contact details, address, skills, accomplishments of all the professors among all the IITs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-briefcase"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Library Assisstant Bot</h2>
+              <p class="s-description text-center">
+              	Aim of the project is to help library workers in arranging the return books. The bot scan books using image processing to read the bar code mapped to a location in the shelf and according to the location the bot will follow the path.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-android-contact"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Anugami</h2>
+              <p class="s-description text-center">
+              	A human following robot which follows user using GPS signals of the smartphone converted into respective latitudes and longitudes. Further the distance moved and angle rotated is calculated with the help of mobile inbuilt magnetic motion sensors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Projects End /-->
 
-  <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
+  <!--/ Section Portfolio Star /-->
+  <section id="Activities" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
-              Services
+              Other Activities
             </h3>
             <p class="subtitle-a">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -266,99 +425,94 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
+          <div class="work-box">
+            <a href="img/work-1.jpg" class="img-box lightbox thumbnail" data-lightbox-anima="show-scale">
+              <div class="work-img">
+                <img src="img/work-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a class="img-box lightbox thumbnail" href="#lb2" data-lightbox-anima="show-scale">
+              <div class="work-img">
+                <img src="img/work-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div id="lb2" class="box-lightbox" style="padding:25px">
+                        <div class="subtitle g">
+                            <h4>CUSTOM HTML FOR LIGHTBOX</h4>
+                            <hr>
+                            <p class="sub">This is a custom HTML element</p>
+                        </div>
+                        Lorem ipsum dolor "sitamet", consectetur 'adipisici sd ng' elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
+                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa quae ab illo inventore veritatis et quasi architecto beatae
+                        vitae dicta sunt explicabo.
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Photography</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
+          <div class="work-box">
+            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--/ Section Services End /-->
+  <!--/ Section Portfolio End /-->
+
+
 
   <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
     <div class="overlay-mf"></div>
@@ -853,7 +1007,7 @@
   <script src="lib/counterup/jquery.waypoints.min.js"></script>
   <script src="lib/counterup/jquery.counterup.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
   <script src="lib/typed/typed.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
@@ -872,7 +1026,13 @@
   <!--  Timeline  -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="timeline.js"></script>
+	<script src="js/timeline.js"></script>
 
+
+
+	<!-- Popup -->
+    <script src="js/jquery.min.js"></script>
+    <script src='js/jquery.magnific-popup.min.js'></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

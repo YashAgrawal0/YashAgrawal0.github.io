@@ -1325,3 +1325,10 @@ footer .credits a {
 .myInfo {
   text-align: center;
 }
+
+#title_box {
+  margin-bottom: 3rem;
+  background-color: #d2eeff;
+  width: 110%;
+  margin-left: -5%;
+}

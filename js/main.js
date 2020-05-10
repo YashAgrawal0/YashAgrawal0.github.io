@@ -6,6 +6,10 @@
   $('.navbar-toggler').on('click', function() {
     if( ! $('#mainNav').hasClass('navbar-reduce')) {
       $('#mainNav').addClass('navbar-reduce');
+    }else{
+    	if($('#mainNav').hasClass('navbar-trans')){
+			$('.navbar-expand-md').removeClass('navbar-reduce');
+    	}
     }
   })
 
