@@ -1,14 +1,3 @@
-// $(document).ready(function(){
-//   $("#2017_container").click(function(){
-//     $("#2017_container").fadeOut(500);
-//     $("#fadeOutC500ontent2017").fadeOut(500);
-//     $("#2017_container").fadeIn("slow");
-//     $("#fadeInC1000ontent2017").fadeIn("slow");
-//     // $("#div2").fadeIn("slow");
-//     // $("#div3").fadeIn(3000);
-//   });
-// });
-
 $(document).ready(function(){
     $(window).scroll(function(){
 		var hT = $('#timeline').offset().top;
@@ -53,7 +42,7 @@ $(document).ready(function(){
 		}
 
 
-		if(hS - hT > 1300){
+		if(hS - hT > 1000){
     		// $("#title_2008").fadeOut(500);
 		    $("#img_2008").fadeIn(1000);
 		}

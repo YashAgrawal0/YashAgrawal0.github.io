@@ -15,7 +15,7 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Preloader -->
-  <link rel="stylesheet" href="css/preloader_main.css">
+  <!-- <link rel="stylesheet" href="css/preloader_main.css"> -->
   
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -29,6 +29,14 @@
   <link href="css/style.css" rel="stylesheet">
 
   <link rel="stylesheet" href='css/magnific-popup.css'>
+
+
+  <!-- quotes css -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="quotes/animate.css">
+	<link rel="stylesheet" href="quotes/owl.carousel.min.css">
+	<link rel="stylesheet" href="quotes/style.css">
 </head>
 
 <body id="page-top">
@@ -303,7 +311,7 @@
               <span class="ico-circle"><i class="ion-android-volume-up"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Automatic Commentary Generation using DL</h2>
+              <h2 class="s-title">Automatic Commentary Generation</h2>
               <p class="s-description text-center">
               	Generated commentary of the given cricket video using different networks : scene segmentation, Single Shot multibox Detector, classifiers for annotating batsman and bowler name 
               	<a class="img-box lightbox thumbnail" href="#project2" data-lightbox-anima="show-scale" style="color: blue;">
@@ -324,7 +332,7 @@
                     Initially the full length cricket video was cut into videos of each ball. Now the video of each ball was converted into frames and saves into the corresponding ball number folder. Given a ball video length folder, separated the starting scene frames from other scenes using scene segmentation. A pre-trainded SSD was used to generate the bouding boxes for batsman and bowler. The frames were cropped with the bounding boxes and saves into the corresponding folders as batsman/player_id and the bowler/player_id. These cropped images were then used to train a siamese network for naming batsman and the bowler. Now the commentary is generated using NLP (Natural Language Processing).
                     <br>
                     <br>
-                    If required, full explaination can be found in the link given below.
+                    Full explaination of the project can be found in the link given below.
                     <hr>
                     <a href="https://www.youtube.com/watch?v=DZOQS_a0dEo" style="text-align: center;"><h5 style="color: blue;">Click to know more</h5></a>
                 </div>
@@ -355,7 +363,7 @@
                     In terms of design aspets, There’s a single VM (Virtual Machine) on which several docker containers are running in parallel. There’s a container for hosting Apache websites e.g, Programming Club website, SNTC website, STAC website, etc which are static websites. Another container will host NodeJS app. One container for MongoDB and another for MySQL. These all are setup using Docker swarm to enable dynamic replication of the containers for load balancing. The actual files and folders containing the actual websites and database are stored in the VM itself and mapped from the container. So that the deletion and creation of new containers would not take much time as all the data is stored in the VM itself.
                     <br>
                     <br>
-                     If you are interested in the project, find the full report of the project in the link given below.
+                     Find the final report of the project in the link given below.
                     <hr>
                     <a href="https://docs.google.com/document/d/1qm4tWLVas_4x8wsvNPSPnLcVx51gVV-0XlmerxUGRtY/edit?usp=sharing" style="text-align: center;"><h5 style="color: blue;">Click to know more</h5></a>
                 </div>
@@ -407,8 +415,156 @@
   </section>
   <!--/ Section Projects End /-->
 
-  <!--/ Section Portfolio Star /-->
-  <section id="Activities" class="portfolio-mf sect-pt4 route">
+<!-- quotes start -->
+
+  <div class="section-counter paralax-mf bg-image testimony-section" style="background-image: url(img/campus2.jpeg)">
+    <div class="overlay-mf"></div>
+	    <div class="container">
+	      <div class="row ftco-animate">
+	      <div class="col-md-12">
+	        <div class="carousel-testimony owl-carousel ftco-owl">
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">When you want to uncover the secrets of the universe, basic programming is an essential skill to learn.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Stephen Hawking</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">The last ones standing are the victors. Only the strongest. If you want to be the last one standing become strong.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Tobio</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">Whatever you’ve begun will naturally become important to you. What you need at the start is a little bit of curiosity.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Brian Kernighan</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">A language that doesn't affect the way you think about programming is not worth knowing.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Alan J. Perlis</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">Everybody should learn to program a computer, because it teaches you how to think.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Steve Jobs</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-5">If we go for what's soomewhat safe here, it'll mean we never changed.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Sugawara Koushi</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">If debugging is the process of removing software bugs then programming must be the process of putting them back in.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Edsger Dijkstra</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">The most important property of a program is whether it accomplishes the intention of its user.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― C.A.R. Hoare</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-5">Programming is not about what you know, it's about what you can figure out.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Chris Pine</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          
+	          <div class="item">
+	            <div class="testimony-wrap py-4">
+	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+	              <div class="text">
+	                <p class="mb-4">Even if we're not confident that we'll win, even if others tell us we don't stand a chance, we must never tell ourselves that.</p>
+	                <div class="d-flex align-items-center">
+                      	<div class="pl-3">
+		                    <p class="name">― Sawamura Daichi</p>
+		                </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	          
+	        </div>
+	      </div>
+	    </div>
+    </div>
+  </div>
+
+<!-- Quotes end -->
+
+  <!--/ Section Other Activities Start /-->
+  <section id="Activities" class="portfolio-mf sect-pt4 route" style="background-color: #ffffee;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -417,7 +573,7 @@
               Other Activities
             </h3>
             <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Some of my recent activities.
             </p>
             <div class="line-mf"></div>
           </div>
@@ -426,16 +582,17 @@
       <div class="row">
         <div class="col-md-4">
           <div class="work-box">
-            <a href="img/work-1.jpg" class="img-box lightbox thumbnail" data-lightbox-anima="show-scale">
+            <a href="img/icpc.jpg" class="img-box lightbox thumbnail" data-lightbox-anima="show-scale">
               <div class="work-img">
-                <img src="img/work-1.jpg" alt="" class="img-fluid">
+                <img src="img/icpc2.jpg" alt="" class="img-fluid">
               </div>
+            </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <h2 class="w-title">ACM ICPC 2019</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-date">8 Dec. 2019</span> and <span class="w-date">27 Dec. 2019</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -445,21 +602,20 @@
                   </div>
                 </div>
               </div>
-            </a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-box">
             <a class="img-box lightbox thumbnail" href="#lb2" data-lightbox-anima="show-scale">
               <div class="work-img">
-                <img src="img/work-2.jpg" alt="" class="img-fluid">
+                <img src="img/lineFollower2.jpg" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <h2 class="w-title">Line Follower Bot</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    	<span class="w-date">7 Apr. 2018</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -485,16 +641,16 @@
         </div>
         <div class="col-md-4">
           <div class="work-box">
-            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+            <a href="img/volley1.jpg" data-lightbox="gallery-mf">
               <div class="work-img">
-                <img src="img/work-3.jpg" alt="" class="img-fluid">
+                <img src="img/volley1.jpg" alt="" class="img-fluid">
               </div>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <h2 class="w-title">VolleyBall</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    	<span class="w-date">Since Aug. 2016</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -510,382 +666,7 @@
       </div>
     </div>
   </section>
-  <!--/ Section Portfolio End /-->
-
-
-
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">450</p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">15</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">550</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">36</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-2.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-3.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-4.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-5.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-6.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2015</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!--/ Section Portfolio End /-->
-
-  <!--/ Section Testimonials Star /-->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="testimonial-mf" class="owl-carousel owl-theme">
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Xavi Alonso</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div>
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Marta Socrate</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--/ Section Blog Star /-->
-  <section id="blog" class="blog-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Blog
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Blog End /-->
+  <!--/ Section Other Activities End /-->
 
   <!--/ Section Contact-Footer Star /-->
   <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
@@ -977,14 +758,8 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+              <p class="copyright">&copy; Copyright <strong>Yash Agrawal</strong>. All Rights Reserved</p>
               <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
               </div>
             </div>
@@ -1034,5 +809,17 @@
     <script src="js/jquery.min.js"></script>
     <script src='js/jquery.magnific-popup.min.js'></script>
     <script src="js/script.js"></script>
+
+
+
+    <!-- quotes -->
+
+	<script src="quotes/jquery.min.js"></script>
+	<script src="quotes/jquery-migrate-3.0.1.min.js"></script>
+	<script src="quotes/jquery.waypoints.min.js"></script>
+	<script src="quotes/jquery.stellar.min.js"></script>
+	<script src="quotes/owl.carousel.min.js"></script>
+	<script src="quotes/main.js"></script>
+
 </body>
 </html>
