@@ -54,12 +54,30 @@
 	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: (target.offset().top - navHeight + 20)
-				}, 1000, "easeInOutExpo");
-				return false;
+			if(this.hash.slice(1) == 'home' || this.hash.slice(1) == 'about' || this.hash.slice(1) == 'timeline'){
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: (target.offset().top - navHeight + 20)
+					}, 1000, "easeInOutExpo");
+					return false;
+				}
+			}
+			else{
+				var x = 0;
+				if(!$("#img_2019").is(":visible")) x += $("#img_2019").outerHeight();
+				if(!$("#img_2018").is(":visible")) x += $("#img_2018").outerHeight();
+				if(!$("#img_2016").is(":visible")) x += $("#img_2016").outerHeight();
+				if(!$("#img_2015").is(":visible")) x += $("#img_2015").outerHeight();
+				if(!$("#img_2008").is(":visible")) x += $("#img_2008").outerHeight();
+				
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: (target.offset().top - navHeight + 20 + x)
+					}, 1000, "easeInOutExpo");
+					return false;
+				}
 			}
 		}
 	});

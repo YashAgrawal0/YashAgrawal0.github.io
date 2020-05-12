@@ -23,7 +23,6 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -32,11 +31,9 @@
 
 
   <!-- quotes css -->
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="quotes/animate.css">
-	<link rel="stylesheet" href="quotes/owl.carousel.min.css">
 	<link rel="stylesheet" href="quotes/style.css">
+
 </head>
 
 <body id="page-top">
@@ -63,19 +60,25 @@
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
+            <a class="nav-link js-scroll" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#timeline">Timeline</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
+            <a id="project_navigation" class="nav-link js-scroll" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Blog</a>
+            <a id="quotes_navigation" class="nav-link js-scroll" href="#quotes">Quotes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
+            <a class="nav-link js-scroll" id="activities_navigation" href="#Activities">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" id="contact_navigation" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -417,7 +420,7 @@
 
 <!-- quotes start -->
 
-  <div class="section-counter paralax-mf bg-image testimony-section" style="background-image: url(img/campus2.jpeg)">
+  <div id="quotes" class="section-counter paralax-mf bg-image testimony-section" style="background-image: url(img/campus2.jpeg)">
     <div class="overlay-mf"></div>
 	    <div class="container">
 	      <div class="row ftco-animate">
@@ -492,7 +495,7 @@
 	            <div class="testimony-wrap py-4">
 	              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
 	              <div class="text">
-	                <p class="mb-5">If we go for what's soomewhat safe here, it'll mean we never changed.</p>
+	                <p class="mb-5">If we go for what's somewhat safe here, it'll mean we never changed.</p>
 	                <div class="d-flex align-items-center">
                       	<div class="pl-3">
 		                    <p class="name">― Sugawara Koushi</p>
@@ -771,7 +774,6 @@
   <!--/ Section Contact-footer End /-->
 
   <a href="#" class="back-to-top" id="back2top"><i class="fa fa-chevron-up"></i></a>
-  <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -782,7 +784,6 @@
   <script src="lib/counterup/jquery.waypoints.min.js"></script>
   <script src="lib/counterup/jquery.counterup.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
   <script src="lib/typed/typed.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
@@ -793,7 +794,6 @@
 
   <!-- preloader -->
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
   <script src="js/preloader.js"></script>
 
@@ -814,7 +814,6 @@
 
     <!-- quotes -->
 
-	<script src="quotes/jquery.min.js"></script>
 	<script src="quotes/jquery-migrate-3.0.1.min.js"></script>
 	<script src="quotes/jquery.waypoints.min.js"></script>
 	<script src="quotes/jquery.stellar.min.js"></script>

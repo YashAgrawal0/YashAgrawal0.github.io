@@ -3,6 +3,9 @@ $(document).ready(function(){
 		var hT = $('#timeline').offset().top;
 		var hS = $(this).scrollTop();
 		// console.log(hT - hS);
+		// console.log(elementClicked);
+		project_top = $('#projects').offset().top;
+
 		if(hT - hS < 100){
     		// $("#title_2019").fadeOut(500);
 		    $("#img_2019").fadeIn(1000);
