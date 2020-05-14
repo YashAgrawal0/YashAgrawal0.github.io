@@ -79,7 +79,7 @@
 						}, 1000, "easeInOutExpo");	
 					}else{
 						$('html, body').animate({
-							scrollTop: (target.offset().top - navHeight + 10 + x)
+							scrollTop: (target.offset().top - navHeight - 10 + x)
 						}, 1000, "easeInOutExpo");
 					}
 					return false;
@@ -156,17 +156,19 @@ function sendEmail() {
 	console.log(subject);
 	console.log(body);
 
-	window.location.href = "mailto:yashagrawal048@gmail.com" + "?subject=" + subject + "&body=" + body;
+	if(subject!="" && body!=""){
+		window.location.href = "mailto:yashagrawal048@gmail.com" + "?subject=" + subject + "&body=" + body;
+	}
 }
 
-function whatsapp() {
-	var input = document.getElementById('messageBody');
-	var body = input.value.replace(/\n/g,"%0D%0A");
-	var input = document.getElementById('subject');
-	var subject = input.value;
+// function whatsapp() {
+// 	var input = document.getElementById('messageBody');
+// 	var body = input.value.replace(/\n/g,"%0D%0A");
+// 	var input = document.getElementById('subject');
+// 	var subject = input.value;
 
-	console.log(subject);
-	console.log(body);
+// 	console.log(subject);
+// 	console.log(body);
 
-	window.location.href = "whatsapp://send?text= Subject : " + subject + "%0D%0A%0D%0A" + body;
-}
+// 	window.location.href = "whatsapp://send?text= Subject : " + subject + "%0D%0A%0D%0A" + body;
+// }

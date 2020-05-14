@@ -8,14 +8,14 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/favicon3.png" rel="icon">
+  <link href="img/favicon3.png" rel="apple-touch-icon">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Preloader -->
-  <!-- <link rel="stylesheet" href="css/preloader_main.css"> -->
+  <link rel="stylesheet" href="css/preloader_main.css">
   
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -124,7 +124,7 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-12">
                     <div class="about-img">
-                      <img src="img/pic2.jpg" class="img-fluid rounded b-shadow-a" style="border: 2px solid black;" alt="">
+                      <img src="img/myPic21.png" class="img-fluid rounded b-shadow-a" style="border: 2px solid black;" alt="">
                     </div>
                   </div>
                 </div>
@@ -132,7 +132,7 @@
               <div class="col-md-6">
               	  <div class="col-sm-6 col-md-12">
                     <div class="about-info" style="border: 1px solid black;">
-                      <p style="text-align: center;" ><span class="title-s">Name : </span> <span>Yash Agrawal</span></p>
+                      <p style="text-align: center; margin-top: 3%;" ><span class="title-s">Name : </span> <span>Yash Agrawal</span></p>
                       <p style="text-align: center;" ><span class="title-s">Email : </span> <span>yashagrawal048@gmail.com</span></p>
                       <p style="text-align: center;" ><span class="title-s">Phone : </span> <span>(+91) 9736211448</span></p>
                       <p style="text-align: center;" ><span class="title-s">University : </span> <span>Indian Institute Of Technology, Mandi, HP</span></p>
@@ -299,13 +299,13 @@
                         <hr>
                     </div>
                     Major Goal of Analytics and reporting services in "Microsoft Teams" is to measure the growth and engagement of owners and members to understand how teams is being used. Several metrics can be tracked in MS teams like : Active users, volume of messages, number of file uploads, top channels, top contributors etc.
-                    To be able to build these data driven features inside MS teams the primary requirement is to check these features using synthetic data and these can be rolled out in production. Real customer data can not be used due to privacy concerns, data protection and security reasons.
+                    To be able to build these data driven features inside MS teams the primary requirement is to check these features using synthetic data so that the features can be rolled out in production. Real customer data can not be used due to privacy concerns, data protection and security reasons.
                     <br>
                     <br>
-                    The goal of the project is to build an internal tool through which data can be generated for any number of test tenants. During the intenship at Micorosoft I Created the synthetic data generation tool which triggers the application (MS teams) in different scenarios. The tool was built on following technologies : Python, Javascript, Selenium, Chrome Extension, Postman, Azure Server, REST API, SMTP server, Database Server, Object oriented programming.Javascript used to convert the data from extension into json format and make a POST request to the flask server deployed on azure. In the background Daemon scripts are running in distributed systems and constantly checking for new jobs from the database.
+                    The goal of the project is to build an internal tool through which data can be generated for any number of test tenants. During the intenship at Micorosoft I Created the synthetic data generation tool which triggers the application (MS teams) in different scenarios. The tool was built on following technologies : Python, Javascript, Selenium, Chrome Extension, Postman, Azure Server, REST API, SMTP server, Database Server, Object oriented programming. Javascript was used to convert the data from extension into json format and make a POST request to the flask server deployed on azure. In the background Daemon scripts are running in distributed systems and constantly checking for new jobs from the database.
                     <br>
                     <br>
-                    After the completion of the project Microsoft developers were able to use the chrome extension to submit a job which will generate the data. Database is used to make the data persistent and multiple jobs can run at the same time. In the production version whenever a job gets completed a notification was sent to the cocerned person using an SMTP server. 
+                    After the completion of the project Microsoft developers were able to use the GUI using chrome extension to submit a job which will generate the data. Database is used to make the data persistent and multiple jobs can run at the same time. In the production version whenever a job gets completed a notification was sent to the cocerned person using an SMTP server. 
                 </div>
               </p>
             </div>
@@ -319,7 +319,7 @@
             <div class="service-content">
               <h2 class="s-title">Automatic Commentary Generation</h2>
               <p class="s-description text-center">
-              	Generated commentary of the given cricket video using different networks : scene segmentation, Single Shot multibox Detector, classifiers for annotating batsman and bowler name 
+              	Generated commentary of the given cricket video using different neural networks : scene segmentation, Single Shot multibox Detector, classifiers for annotating batsman and bowler name 
               	<a class="img-box lightbox thumbnail" href="#project2" data-lightbox-anima="show-scale" style="color: blue;">
                         more ...
                 </a>
@@ -332,10 +332,10 @@
                     Created a deep learning application to automatically generates commentary of a cricket video provided. Networks used in the project were : scene segmentation, SSD (Single Shot multibox Detector), classifiers for annotating batsman and bowler name and shot played by the batsman using conv LSTM.
                     <br>
                     <br>
-                    Following technologies were used to build the project : Python (Used to import all the libraries related to deep learning like tensorflow, imageai, object detection etc.), Keras (an open source neural network library capable of running on top of tensorflow), cv2 (Python library used to load and read the image file provided).
+                    Following technologies were used to build the project : Python (Used to import all the libraries related to deep learning like tensorflow, imageai, object detection etc.), Keras (an open source neural network library capable of running on top of tensorflow), cv2 (Python library used to load and read the image files provided).
                     <br>
                     <br>
-                    Initially the full length cricket video was cut into videos of each ball. Now the video of each ball was converted into frames and saves into the corresponding ball number folder. Given a ball video length folder, separated the starting scene frames from other scenes using scene segmentation. A pre-trainded SSD was used to generate the bouding boxes for batsman and bowler. The frames were cropped with the bounding boxes and saves into the corresponding folders as batsman/player_id and the bowler/player_id. These cropped images were then used to train a siamese network for naming batsman and the bowler. Now the commentary is generated using NLP (Natural Language Processing).
+                    Initially the full length cricket video was cut into videos of each ball. Now the video of each ball was converted into frames and saved into the corresponding ball number folder. Given a ball video length folder, separated the starting scene frames from other scenes using scene segmentation. A pre-trainded SSD was used to generate the bounding boxes for batsman and bowler. The frames were cropped with the bounding boxes and saved into the corresponding folders as batsman/player_id and the bowler/player_id. These cropped images were then used to train a siamese network for naming batsman and the bowler and then the commentary is generated using NLP (Natural Language Processing).
                     <br>
                     <br>
                     Full explaination of the project can be found in the link given below.
@@ -354,7 +354,7 @@
             <div class="service-content">
               <h2 class="s-title">Hosting Students Projects</h2>
               <p class="s-description text-center">
-              	Bash script created through which students of IIT Mandi can host new projects in docker containers. Docker swarm used for dynamic scaling of docker containers. Load tested using 
+              	Bash script created through which students of IIT Mandi can host new projects in docker containers. Docker swarm used for dynamic scaling of docker containers to handle load on the server.
               	<a class="img-box lightbox thumbnail" href="#project3" data-lightbox-anima="show-scale" style="color: blue;">
                         more ...
                 </a>
@@ -363,10 +363,10 @@
                         <h4>Hosting Students Projects</h4>
                         <hr>
                     </div>
-                    The project was intended for all the students, faculties, and clubs in IIT Mandi who want to host their projects. This may also be useful for other students who want to work on similar project for their organization or for some other purpose. Projects made by students from different fields need to be hosted at a place providing efficient consumption of host resources. These student projects are heterogeneous in terms of the software components required. However, there may be certain software components that are common to a group of projects. Rather than creating a docker container for each project, we can have shared containers for shared components across projects. Sharing containers is not always a good idea. If one of the projects that shares a container has a heavy load, it will affect others as well. 
+                    The project was intended for all the students, faculties, and clubs in IIT Mandi who want to host their projects. This may also be useful for other students who want to work on similar project for their organization or for some other purpose. Projects made by students from different fields need to be hosted at a place providing efficient consumption of host resources. These student projects are heterogeneous in terms of the software components required. However, there may be certain software components that are common to a group of projects. Rather than creating a docker container for each project, we had shared containers for shared components across projects. Sharing containers is not always a good idea. If one of the projects that shares a container has a heavy load, it would affect others as well. 
                     <br>
                     <br>
-                    In terms of design aspets, There’s a single VM (Virtual Machine) on which several docker containers are running in parallel. There’s a container for hosting Apache websites e.g, Programming Club website, SNTC website, STAC website, etc which are static websites. Another container will host NodeJS app. One container for MongoDB and another for MySQL. These all are setup using Docker swarm to enable dynamic replication of the containers for load balancing. The actual files and folders containing the actual websites and database are stored in the VM itself and mapped from the container. So that the deletion and creation of new containers would not take much time as all the data is stored in the VM itself.
+                    In terms of design aspets, There was a single VM (Virtual Machine) on which several docker containers were running in parallel. A container for hosting Apache websites e.g, Programming Club website, SNTC website, STAC website, etc which are static websites. Another container to host NodeJS applications. One container for MongoDB and another for MySQL. These all were setup using Docker swarm to enable dynamic replication of the containers for load balancing. The actual files and folders containing the actual websites and database are stored in the VM itself and mapped from the container. So that the deletion and creation of new containers would not take much time as all the data was stored in the VM itself.
                     <br>
                     <br>
                      Find the final report of the project in the link given below.
@@ -398,7 +398,7 @@
             <div class="service-content">
               <h2 class="s-title">Library Assisstant Bot</h2>
               <p class="s-description text-center">
-              	Aim of the project is to help library workers in arranging the return books. The bot scan books using image processing to read the bar code mapped to a location in the shelf and according to the location the bot will follow the path.
+              	Aim of the project was to help library workers in arranging the return books. The bot scan books using image processing to read the bar code mapped to a location in the shelf and according to the location the bot followed the path respectively.
               </p>
             </div>
           </div>
@@ -590,7 +590,11 @@
           <div class="work-box">
             <a href="img/icpc.jpg" class="img-box lightbox thumbnail" data-lightbox-anima="show-scale">
               <div class="work-img">
-                <img src="img/icpc2.jpg" alt="" class="img-fluid">
+              	<a class="img-box lightbox thumbnail" href="img/icpc2.jpg" data-lightbox-anima="show-scale">
+                    <span>
+	                	<img src="img/icpc2.jpg" alt="" class="img-fluid">
+                    </span>
+                </a>
               </div>
             </a>
               <div class="work-content">
@@ -603,7 +607,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
+                      <a href="icpc/index.html"><span class="ion-ios-plus-outline"></span></a>
                     </div>
                   </div>
                 </div>
@@ -612,9 +616,12 @@
         </div>
         <div class="col-md-4">
           <div class="work-box">
-            <a class="img-box lightbox thumbnail" href="#lb2" data-lightbox-anima="show-scale">
               <div class="work-img">
-                <img src="img/lineFollower2.jpg" alt="" class="img-fluid">
+              	<a class="img-box lightbox thumbnail" href="img/lineFollower2.jpg" data-lightbox-anima="show-scale">
+                    <span>
+	                	<img src="img/lineFollower2.jpg" alt="" class="img-fluid">
+                    </span>
+                </a>
               </div>
               <div class="work-content">
                 <div class="row">
@@ -626,30 +633,22 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
+                      <a href="lineFollower/index.html"><span class="ion-ios-plus-outline"></span></a>
                     </div>
                   </div>
                 </div>
               </div>
-            </a>
-            <div id="lb2" class="box-lightbox" style="padding:25px">
-                        <div class="subtitle g">
-                            <h4>CUSTOM HTML FOR LIGHTBOX</h4>
-                            <hr>
-                            <p class="sub">This is a custom HTML element</p>
-                        </div>
-                        Lorem ipsum dolor "sitamet", consectetur 'adipisici sd ng' elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error
-                        sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa quae ab illo inventore veritatis et quasi architecto beatae
-                        vitae dicta sunt explicabo.
-            </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-box">
             <a href="img/volley1.jpg" data-lightbox="gallery-mf">
               <div class="work-img">
-                <img src="img/volley1.jpg" alt="" class="img-fluid">
+              	<a class="img-box lightbox thumbnail" href="img/volley1.jpg" data-lightbox-anima="show-scale">
+                    <span>
+	                	<img src="img/volley1.jpg" alt="" class="img-fluid">
+                    </span>
+                </a>
               </div>
               <div class="work-content">
                 <div class="row">
@@ -686,20 +685,12 @@
                 <div class="col-md-6">
                   <div class="title-box-2">
                     <h5 class="title-left">
-                      Send Message Us
+                      Send Message
                     </h5>
                   </div>
                   <div>
                       <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
                       <div class="row">
-                        <!-- <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                          </div>
-                        </div> -->
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
@@ -713,30 +704,27 @@
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="submit" onclick="sendEmail()" class="button button-a button-big button-rouded">Send Message</button>
-                          <button type="submit" onclick="whatsapp()" class="button button-a button-big button-rouded">Whatsapp <i class="ion-social-whatsapp"></i></button>
+                          <button type="submit" onclick="sendEmail()" class="button button-a button-big button-rouded">Send Message</button><!-- 
+                          <button type="submit" onclick="whatsapp()" class="button button-a button-big button-rouded">Whatsapp <i class="ion-social-whatsapp"></i></button> -->
                         </div>
                       </div>
                     </form>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
+                  <div class="title-box-2 pt-4 pt-md-0" style="margin-bottom: 2.5rem;">
                     <h5 class="title-left">
                       Get in Touch
                     </h5>
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                      expedita aperiam aliquid at.
-                      Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                      mollitia inventore?
+                      If you have any questions about my portfolio, feel free to connect or just use the contact form to drop me a message. Below are my social handles and my email. I'll get in touch as soon as I can.
                     </p>
                     <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                      <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                      <li><span class="ion-email"></span> contact@example.com</li>
+                      <li><span class="ion-ios-location"></span> B13-305, IIT Mandi, Kamand, 175005</li>
+                      <li><span class="ion-ios-telephone"></span> (+91) 9736211448</li>
+                      <li><span class="ion-email"></span> yashagrawal048@gmail.com</li>
                     </ul>
                   </div>
                   <div class="socials">
