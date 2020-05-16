@@ -149,7 +149,12 @@
 
 function sendEmail() {
 	var input = document.getElementById('messageBody');
-	var body = input.value.replace(/\n/g,"%0D%0A");
+	
+	if($(window).width()<=1199){
+	  	var body = input.value.replace(/\n/g,"<br>");
+	}else{
+		var body = input.value.replace(/\n/g,"%0D%0A");
+	}
 	var input = document.getElementById('subject');
 	var subject = input.value;
 

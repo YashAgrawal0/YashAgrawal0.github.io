@@ -1276,6 +1276,10 @@ footer .credits a {
   .testimonial-box .description {
     padding: 0 8rem;
   }
+  
+  #travelActivity {
+    height: 430px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1293,6 +1297,10 @@ footer .credits a {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+
+  #travelActivity {
+    height : 230px;
   }
 
   #home {
