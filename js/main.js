@@ -146,6 +146,40 @@
 
 })(jQuery);
 
+let OTP;
+
+function validateOTP(activity) {
+    if (OTP === document.getElementById(activity+"OTP").value)
+    {
+    		return true;
+    }
+    else
+    {
+			  var popup = document.getElementById(activity+"Popup");
+			  popup.classList.toggle("show");
+				return false;
+    }
+}
+
+function sendOTP(activity) {
+
+  var string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    
+  // Find the length of string
+  var len = string.length;
+  OTP = '';
+  for (let i = 0; i < 6; i++ ) {
+      OTP += string[Math.floor(Math.random() * len)];
+  }
+
+  Email.send({
+    SecureToken : "38bafba7-1574-47ee-a3e3-63745fdefc66",
+    To: 'yash.dabbu048@gmail.com',
+    From: "sendemail048@gmail.com",
+    Subject: "OTP to allow access to "+activity+" gallery in my website.",
+    Body: "OTP :  "+ OTP,
+  });
+}
 
 function sendEmail() {
 	var input = document.getElementById('messageBody');
@@ -165,15 +199,3 @@ function sendEmail() {
 		window.location.href = "mailto:yashagrawal048@gmail.com" + "?subject=" + subject + "&body=" + body;
 	}
 }
-
-// function whatsapp() {
-// 	var input = document.getElementById('messageBody');
-// 	var body = input.value.replace(/\n/g,"%0D%0A");
-// 	var input = document.getElementById('subject');
-// 	var subject = input.value;
-
-// 	console.log(subject);
-// 	console.log(body);
-
-// 	window.location.href = "whatsapp://send?text= Subject : " + subject + "%0D%0A%0D%0A" + body;
-// }
