@@ -156,7 +156,7 @@ function validateOTP(activity) {
     else
     {
 			  var popup = document.getElementById(activity+"Popup");
-			  popup.classList.toggle("show");
+			  popup.classList.toggle("show");	
 				return false;
     }
 }
@@ -174,7 +174,7 @@ function sendOTP(activity) {
 
   Email.send({
     SecureToken : "38bafba7-1574-47ee-a3e3-63745fdefc66",
-    To: 'yash.dabbu048@gmail.com',
+    To: 'yashagrawal048@gmail.com',
     From: "sendemail048@gmail.com",
     Subject: "OTP to allow access to "+activity+" gallery in my website.",
     Body: "OTP :  "+ OTP,
