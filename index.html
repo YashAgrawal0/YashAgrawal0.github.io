@@ -301,6 +301,49 @@
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
+              <span class="ico-circle"><i class="ion-trophy"></i></span>
+            </div> 
+            <div class="service-content">
+              <h2 class="s-title">Pictorial</h2> 
+              <p class="s-description text-center">
+                <b>Have you ever seen Cortana?</b>
+                <br>
+                <i>What if we say we did !!!</i>
+                <br>
+                Do you wish if your image can speak on your behalf with perfect pronounciation?
+                <br>
+                Well pictorial is here for you. Let's bring your meetings to life.
+                <a class="img-box lightbox thumbnail" href="#project4" data-lightbox-anima="show-scale" style="color: blue;">
+                        more ...
+                </a>
+                <div id="project4" class="box-lightbox">
+                    <div class="subtitle g">
+                        <h4>Bring your meetings to life</h4>
+                        <hr>
+                    </div>
+                    A library to generate voice and animation based on text entered in order to mock a real life delivery of content to consumers. This will enable virtual delivery of speech by a person without being present in person. The conversation will look real as the person's image will mimic the text with animation. The project can be broken down into three stages:
+                    <br>
+                    1. First the image is converted to video using first order motion model which will generate deepfake video. To do that, we decouple appearance and motion information using a self supervised formulation. A generator network model combines the appearance extracted from the source image and the motion dervied from the sample video. Basically the image and a sample video is feeded to a network which determines keypoints in both image and video and estimate the relative movement of each keypoint in sample video. Then this movement will be added to the absolute position of keypoints in the source image. The model was trained on a set of videos depicting objects of faces, human bodies.
+                    <br>
+                    2. Then we used Natural Language Processing to synthesize speech from text.
+                    <br>
+                    3. At last the lip syncing is done using a GAN model (Generative Adversarial Network), where we have a generator and discriminator. The network is trained on LRS2 dataset (Lip Reading Sentences Dataset), which will eventually enforce the genrator to produce accurate lip shapes and sync it with the synthesized speech.
+                    <br>
+                    <br>
+                    I have volunteered to lead this project and participated in <b>Microsoft Global Hackathon 2k21</b>, making it to top 10 selected projects out of 1.5k projects across all over India.
+                    <br>
+                    <br>
+                    Full explaination of the project can be found in the link given below.
+                    <hr>
+                    <a href="https://drive.google.com/file/d/1vI0Bqz1Vi2XgsJXl_PDvxEbrgDL92c3-/view?usp=sharing" target="_blank" style="text-align: center;"><h5 style="color: blue;">Click to know more</h5></a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
               <span class="ico-circle"><i class="ion-settings"></i></span>
             </div>
             <div class="service-content">
@@ -415,7 +458,7 @@
             <div class="service-content">
               <h2 class="s-title">Library Assisstant Bot</h2>
               <p class="s-description text-center">
-              	Aim of the project was to help library workers in arranging the return books. The bot scan books using image processing to read the bar code mapped to a location in the shelf and according to the location the bot followed the path respectively.
+              	Aim of the project was to help library workers in arranging the returned books. The bot scan books using image processing to read the bar code mapped to a location in the shelf and according to the location the bot followed the path respectively.
               </p>
             </div>
           </div>
