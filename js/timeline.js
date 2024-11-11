@@ -21,7 +21,7 @@ $(document).ready(function(){
 		    $("#img_2022").fadeOut(500);
 		}
 
-		if(hS - hT > 600){
+		if(hS - hT > 400){
 		    $("#img_2020").fadeIn(1000);
 		}
 		else{
@@ -29,7 +29,7 @@ $(document).ready(function(){
 		}
 
 
-		if(hS - hT > 900){
+		if(hS - hT > 700){
     		// $("#title_2016").fadeOut(500);
 		    $("#img_2019").fadeIn(1000);
 		}
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		}
 
 
-		if(hS - hT > 1200){
+		if(hS - hT > 1000){
     		// $("#titsle_2015").fadeOut(500);
 		    $("#img_2018").fadeIn(1000);
 		}
@@ -49,7 +49,7 @@ $(document).ready(function(){
 		}
 
 
-		if(hS - hT > 1500){
+		if(hS - hT > 1300){
     		// $("#title_2008").fadeOut(500);
 		    $("#img_2016").fadeIn(1000);
 		}
@@ -58,7 +58,7 @@ $(document).ready(function(){
     		// $("#title_2008").fadeIn(1000);
 		}
 
-		if(hS - hT > 2000){
+		if(hS - hT > 1500){
     		// $("#title_2008").fadeOut(500);
 		    $("#img_2015").fadeIn(1000);
 		}
@@ -67,7 +67,7 @@ $(document).ready(function(){
     		// $("#title_2008").fadeIn(1000);
 		}
 
-		if(hS - hT > 2300){
+		if(hS - hT > 1800){
     		// $("#title_2008").fadeOut(500);
 		    $("#img_2008").fadeIn(1000);
 		}
